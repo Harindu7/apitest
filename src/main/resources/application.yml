@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: ${SPRING_APPLICATION_NAME:apitest}
+
+# Mailjet Configuration
+mailjet:
+  api:
+    key: ${MAILJET_API_KEY}
+    secret: ${MAILJET_API_SECRET}
+  from:
+    email: ${MAILJET_FROM_EMAIL}
+    name: ${MAILJET_FROM_NAME}
+
+# Server Configuration
+server:
+  port: ${SERVER_PORT:8080}
+
+# Logging Configuration
+logging:
+  level:
+    com.apitest: ${LOGGING_LEVEL_COM_APITEST:DEBUG}
+    com.mailjet: ${LOGGING_LEVEL_COM_MAILJET:DEBUG}
