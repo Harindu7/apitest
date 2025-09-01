@@ -46,3 +46,10 @@ logging:
   level:
     com.apitest: ${LOGGING_LEVEL_COM_APITEST:DEBUG}
     com.mailjet: ${LOGGING_LEVEL_COM_MAILJET:DEBUG}
+
+# Stripe Configuration
+stripe:
+  api:
+    key: ${STRIPE_API_KEY:}
+  webhook:
+    secret: ${STRIPE_WEBHOOK_SECRET:}

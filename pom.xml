@@ -85,6 +85,13 @@
 			<groupId>io.projectreactor.netty</groupId>
 			<artifactId>reactor-netty-http</artifactId>
 		</dependency>
+
+		<!-- Stripe Java SDK for webhook signature verification and event handling -->
+		<dependency>
+			<groupId>com.stripe</groupId>
+			<artifactId>stripe-java</artifactId>
+			<version>24.9.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
