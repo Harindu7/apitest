@@ -53,3 +53,12 @@ stripe:
     key: ${STRIPE_API_KEY:}
   webhook:
     secret: ${STRIPE_WEBHOOK_SECRET:}
+
+# Twilio Configuration
+twilio:
+  account:
+    sid: ${TWILIO_ACCOUNT_SID:}
+  auth:
+    token: ${TWILIO_AUTH_TOKEN:}
+  from:
+    phone: ${TWILIO_FROM_PHONE:}
