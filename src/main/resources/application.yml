@@ -1,6 +1,10 @@
 spring:
   application:
     name: ${SPRING_APPLICATION_NAME:apitest}
+  data:
+    mongodb:
+      uri: ${MONGO_URI:mongodb://localhost:27017/apitest}
+      auto-index-creation: ${MONGO_AUTO_INDEX:true}
   
   # GitHub OAuth2 Configuration
   security:
@@ -46,6 +50,12 @@ logging:
   level:
     com.apitest: ${LOGGING_LEVEL_COM_APITEST:DEBUG}
     com.mailjet: ${LOGGING_LEVEL_COM_MAILJET:DEBUG}
+
+# OpenAI Configuration
+openai:
+  api:
+    key: ${OPENAI_API_KEY:}
+    base-url: https://api.openai.com/v1
 
 # Stripe Configuration
 stripe:
